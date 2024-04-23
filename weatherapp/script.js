@@ -3,6 +3,7 @@ let units = 'imperial';
 let searchMethod = 'zip';
 
 function getSearchMethod(searchTerm) {
+    getSearchMethod();
     if(searchTerm.length === 5 && Number.parseInt(searchTerm) + '' === searchTerm)
         searchMethod = 'zip';
     else
