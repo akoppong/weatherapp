@@ -60,7 +60,7 @@ function searchWeather(searchTerm) {
 
         temperatureElement.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176';
         windSpeedElement.innerHTML = 'Winds at ' + Math.floor(resultFromServer.wind.speed) + ' m/s';
-        cityHeader.innerHTML = resultFromServer.name;
+        cityHeader.innerHTML = resultFromServer.name + ',' + ' ' + resultFromServer.sys.country;
         humudityElement.innerHTML = 'Humidity is at ' + resultFromServer.main.humidity + '%';
 
         setPositionForWeatherInfo();
